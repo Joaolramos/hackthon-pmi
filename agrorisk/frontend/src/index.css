@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+}
+
+.prose p { margin-bottom: 0.75rem; }
+.prose strong { font-weight: 600; }

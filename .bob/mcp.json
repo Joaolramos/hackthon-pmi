@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "watsonx-orchestrate-adk-docs": {
+      "command": "/home/joao/.local/bin/uvx",
+      "args": [
+        "mcp-proxy",
+        "--transport",
+        "streamablehttp",
+        "https://developer.watson-orchestrate.ibm.com/mcp"
+      ],
+      "timeout": 120000
+    },
+    "watsonx-orchestrate-adk": {
+      "command": "/home/joao/.local/bin/uvx",
+      "args": [
+        "ibm-watsonx-orchestrate-mcp-server"
+      ],
+      "env": {
+        "WXO_MCP_WORKING_DIRECTORY": "/home/joao/Documentos/hackthon2",
+        "WXO_MCP_DEBUG": ""
+      },
+      "timeout": 120000
+    }
+  }
+}
